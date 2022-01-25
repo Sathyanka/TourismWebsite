@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="mobilestyle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="navbar">
+            <h1 class="logo">Sri Lanka</h1>
+            <ul class="nav-links">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="aboout_us.html" > About</a></li>
+                <li><a href="aboout_us.html#contact">Contact Us</a></li>
+                <li><a href="where_to_go.html">Where To Go?</a></li>
+                <li><a href="plan_your_trip.html">Plan Your Trip</a></li>
+                <div class="dropdown">
+                    <li>
+                    <a href="description.html"> Destinations </a>
+                    <div class="dropdown-content">
+                      <a href="kandy.html">Kandy</a>
+                      <a href="kandy.html">Colombo</a>
+                      <a href="kandy.html">Nuwara Eliya</a>
+                      <a href="kandy.html">Ella</a>
+                      <a href="kandy.html">JAffna</a>
+                    </div>
+                </li>
+            </ul>
+            <img src="images/menu-btn.png" class="menu-btn">
+        </nav>
+        <!--End of Navigation bar-->
+        <header>
+            
+            <div class="header-content" >
+                <h2>Puerl Of The Indian Ocean!</h2>
+                <div class="line"></div>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+            </div>
+            
+        </header>
+
+        <!--Enents-->
+        <section class="welcome">
+            <div class="welcome-content">            
+                <h1>Welcome To Sri Lanka</h1> 
+                <div class="line"></div>                
+                <p>See what's waiting for you on your next island getaway.
+                    Savour the unique experiences this island treasure has to offer. </p> 
+                <a class="ctn" href="exploreSriLanka.html" >Learn More</a>
+            </div>
+        </section>
+        <section class="events">
+            <div class="title">
+                <h1>Upcoming Events</h1>
+               
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="images/D4CIHhiWAAA1ZHV.png" alt="">
+                    <h4>New Year Festivel</h4>
+                    <a href="#" class="ctn">Learn More</a>
+                </div>
+                <div class="col">
+                   
+                    <img src="images/73-1024x683.jpg" alt="">
+                    <h4>Asela Perehera</h4>
+                    <a href="#" class="ctn">Learn More</a>
+                   
+                </div>
+                <div class="col">
+                   
+                    <img src="images/Festival-Vesak-3.jpg" alt="">
+                    <h4>National vesak Festivel</h4>
+                    <a href="#" class="ctn">Learn More</a>
+                   
+                </div>
+              
+            </div>
+        </section>
+
+
+    <section class="row_slider">            
+        <div class="row">
+            <div class="col">
+            <div class="row_slider-content">
+            <h1>Explore Island Stories</h1>
+            <p>Every Place has a story!</p>
+            <a href="exploreSriLanka.html" class="ctn">Learn More</a>
+         </div>
+            </div>
+            <div class="image-col">
+                <div class="mySlides fade">
+                    <img src="images/sri-lanka-tourism-awards-and-achievements-in-2020-2019-1.jpg" atl="image" style="height: 80vh; width: 800px;"> 
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/Yala-National-Park-Elephants.jpg" atl="image" style="height: 80vh; width: 800px;"> 
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/kandy_lake.jpg" atl="image" style="height: 80vh; width: 800px;"> 
+                </div>
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    
+                  </div>
+            </div>
+        </div>
+        <script>
+ var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="content-col">
+                <h1>Plan Your Dream Holiday</h1>
+                
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, enim dolores. Repudiandae a aliquid tempora assumenda asperiores ad atque, iure tenetur quas eius delectus culpa reiciendis dignissimos voluptatibus veniam fuga possimus voluptate labore neque, et commodi fugit. Non incidunt illo asperiores quisquam in atque! Quae dolorum perferendis incidunt alias dolores?                     </p>
+                  <a href="where_to_go.html" class="ctn">Learn More</a>   
+            </div>
+            <div class=" image-col">
+                <div class="image-gallery">
+                  
+                    <img src="images/sembuaththa.jpg" atl="image" >                   
+                    <img src="images/download.jpg" atl="image" >
+                    <img src="images/Yala-National-Park-Elephants.jpg" atl="image">
+                    <img src="images/slide02.jpg" atl="image">
+                    
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="app.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Qick Link</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboout_us.html">About</a></li>
+                        <li><a href="where_to_go.html">Where To Go?</a></li>
+                        <li><a href="plan_your_trip.html">Plan your Trip</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Most Search</h4>
+                    <ul>
+                        <li><a href="description.html">Colombo</a></li>
+                        <li><a href="description.html">Kandy</a></li>
+                        <li><a href="description.html">Anuradhapura</a></li>
+                        <li><a href="description.html">JAffna</a></li>
+                        <li><a href="description.html">Nuwara Eliya</a></li>
+                         
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>You may Like</h4>
+                    <ul>
+                        <li><a href="description.html">Sigiriya</a></li>
+                        <li><a href="description.html">Wilpaththu</a></li>
+                        <li><a href="description.html">Hikkaduwa</a></li>
+                        <li><a href="description.html">Ella</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+  
+    </body>
+
+</html>

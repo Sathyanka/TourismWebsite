@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plan You Trip</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mystyle.css">
+        <link rel="stylesheet" href="mobilestyle.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        
+
+    </head>
+    <body>
+                <!--Navigation Bar-->
+                <nav class="navbar">
+                    <h1 class="logo">Sri Lanka</h1>
+                    <ul class="nav-links">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="aboout_us.html" > About</a></li>
+                        <li><a href="aboout_us.html#contact">Contact Us</a></li>
+                        <li><a href="where_to_go.html">Where To Go?</a></li>
+                        <li><a href="plan_your_trip.html">Plan Your Trip</a></li>
+                        <div class="dropdown">
+                            <li>
+                            <a href="description.html"> Destinations </a>
+                            <div class="dropdown-content">
+                              <a href="kandy.html">Kandy</a>
+                              <a href="kandy.html">Colombo</a>
+                              <a href="kandy.html">Nuwara Eliya</a>
+                              <a href="kandy.html">Ella</a>
+                              <a href="kandy.html">JAffna</a>
+                            </div>
+                        </li> 
+                    </ul>
+                    <img src="images/menu-btn.png" class="menu-btn">
+                </nav>
+                <!--End of Navigation bar-->
+                <header>
+            
+                    <div class="header-content">
+                        <h2>Puerl Of The Indian Ocean!</h2>
+                        <div class="line"></div>
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                              <input type="text" placeholder="Search.." name="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                          </div>
+                    </div>
+                    
+                </header>
+                    <section class="todo_app">
+                        <div class="row">
+                            <div class="col-left">
+                                <h3>You May Like to Visit</h3>
+                                <div class="gallery" style="height: 400px;">
+                                    <a target="_blank" href="images/img01.jpg">
+                                        <img src="images/img01.jpg" alt="Cinque Terre" width="600" height="400">
+                                      </a>
+                                      <div class="desc">Yala National Park</div>
+                                      <a href="description.html#yala" class="ctn">Learn More</a>
+                                    </div>
+                                    <div class="gallery" style="height: 400px;">
+                                        <a target="_blank" href="images/sri-lanka-tourism-awards-and-achievements-in-2020-2019-1.jpg">
+                                            <img src="images/sri-lanka-tourism-awards-and-achievements-in-2020-2019-1.jpg" alt="Cinque Terre" width="600" height="400">
+                                          </a>
+                                          <div class="desc">Ella - Sri Lanka</div>
+                                          <a href="description.html#ella" class="ctn"  >Learn More</a>
+                                        </div> <div class="gallery" style="height: 400px;">
+                                            <a target="_blank" href="images/1491646844_Sri_Lanka_-_029_-_Kandy_Temple_of_the_Tooth.jpg.jpg">
+                                                <img src="images/1491646844_Sri_Lanka_-_029_-_Kandy_Temple_of_the_Tooth.jpg.jpg" alt="Cinque Terre" width="600" height="400">
+                                              </a>
+                                              <div class="desc">Kandy</div>
+                                              <a href="kandy.html" class="ctn" >Learn More</a>
+                                            </div>
+
+
+                       </div>
+                     
+                      <div class="col-right" >
+                          <main id="app">
+                              <h3>{{title}}</h3>
+                              <form @submit.prevent="addTodo" >
+                                  <h4>Add Your next Place</h4>
+                                  <label for="newTodo"></label>
+                                  <input v-model="newTodo" type="text" name="newTodo" id= "newTodo" value="">
+                                  <button type="submit" name="button">Add</button>
+                              </form>
+                              <div class="todo_list">
+                                  <h4>To Do List</h4>
+                                  
+                                  <ul>
+                                      <li v-for="todo in todos">
+                                          
+                                         <div class="todo_items">
+                                          <input type="checkbox" v-model="todo.done">
+                                          <span :class="{done:todo.done}">{{todo.title}}</span>
+                                          <button @click="removeTodo(todo)" type="button" name="button">Delete</button>
+                                         </div> 
+                                          
+                                      </li>
+                                  </ul>
+                                  <button @click="allDone" type="button" name="button" >All Done</button>
+                              </div>
+                     
+                  
+                          </main>
+                      </div>
+              
+                    </div> 
+                    </section>
+         
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="app.js"></script>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Qick Link</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboout_us.html">About</a></li>
+                            <li><a href="where_to_go.html">Where To Go?</a></li>
+                            <li><a href="plan_your_trip.html">Plan your Trip</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Most Search</h4>
+                        <ul>
+                            <li><a href="description.html">Colombo</a></li>
+                            <li><a href="description.html">Kandy</a></li>
+                            <li><a href="description.html">Anuradhapura</a></li>
+                            <li><a href="description.html">JAffna</a></li>
+                            <li><a href="description.html">Nuwara Eliya</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>You may Like</h4>
+                        <ul>
+                            <li><a href="description.html">Sigiriya</a></li>
+                            <li><a href="description.html">Wilpaththu</a></li>
+                            <li><a href="description.html">Hikkaduwa</a></li>
+                            <li><a href="description.html">Ella</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </body>
+</html>

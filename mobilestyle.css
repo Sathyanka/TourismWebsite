@@ -1,0 +1,117 @@
+/*Mobile device*/
+@media only screen and (max-width:900px){
+    a{
+        text-emphasis: none;
+    }
+   
+    .navbar{
+        padding: 0;
+        background-color: #272629;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left:30px;
+        color: #272526;      
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: #444344;
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-top-left-radius: 30%;
+
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .menu-btn{
+        display: block;
+        background-color: #272526;
+    }
+    /*Events*/
+    .row{
+        flex-direction: column;
+    }
+    .row .col{
+        margin: 20px auto;
+    }
+    .col img{
+        max-width:90%;
+    }
+    .row_slider .row{
+        flex-direction: column;
+    }
+
+    
+    /*Welcome*/
+    .welcome{
+        width: 100%;
+        height: 60vh;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .welcome-content{
+        width: 100%;
+        height: 100vh;
+    }
+    /*Slider*/
+    .row_slider-content{
+        width: 100%;
+        height: 60vh;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .row_slider .image-col{
+        margin-top: 60px;
+        height: 60vh;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    .tours{      
+        width: 100%;
+        height: 100vh;
+        margin: 400px auto;
+    }
+  
+    .tours .col{
+        width: 100%;
+
+    }
+    .tours .content-col{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        
+    }
+
+    .image-gallery{
+        justify-content: center;
+        align-items: center;
+    }
+   
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footer{
+        width: 100%;       
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        
+        
+    }
+}
